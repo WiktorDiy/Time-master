@@ -44,7 +44,7 @@ int main(){
 	int pm = millis();//previous millis variable
 	while (true){
 		counter.update();//updates execute time class object as fast as possible to refresh internal millis counter for the "counter" object
-		std::cout<<"milis: "<< millis()<<"  Mocros:  "<<micros()<<std::endl; //prints out current millis and micros
+		std::cout<<"millis: "<< millis()<<"  Micros:  "<<micros()<<std::endl; //prints out current millis and micros
 		if (millis()-pm > 10000){
 			pm = millis();
 			delay_seconds(2);
